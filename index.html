@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="C:\Users\Jarro\UCFBootcamp\Sandbox\UCFVW201906FSF1\7 - Firebase\Activities\17-TimeSheet\employeeCSS.css" />
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script type="text/javascript" src="C:\Users\Jarro\UCFBootcamp\Sandbox\UCFVW201906FSF1\7 - Firebase\Activities\17-TimeSheet\employeeJS.js"></script>
+    <title>Employee Data Management</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4"> Employee Data Management </h1>
+                </div>
+            </div>
+        </div> <!--end jumbotron-->
+<br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Current Employees
+                    </div>
+                    <div class="card-body">
+                        <table id="employee-table" class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Employee Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">Months Employed</th>
+                                    <th scope="col">Monthly Rate ($)</th>
+                                    <th scope="col">Total Billed ($)</th>
+                                </tr>
+                            </thead>
+                            <tbody id = "employees">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Add Employee
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name-input">Employee Name</label>
+                                <input class="form-control" id="name-input" placeholder="Insert Name Here">
+                            </div>
+                            <div class="form-group">
+                                <label for="role-input">Role</label>
+                                <input class="form-control" id="role-input" placeholder="Insert Role Here">
+                            </div>
+                            <div class="form-group">
+                                <label for="start-input">Start Date</label>
+                                <input class="form-control" id="start-input" placeholder="MM/DD/YYYY">
+                            </div>
+                            <div class="form-group">
+                                <label for="rate-input">Monthly Rate</label>
+                                <input class="form-control" id="rate-input" placeholder="Insert Rate Here">
+                            </div>
+                        </form>
+                        <button id="submit" type="button" class="btn btn-dark">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
