@@ -1,0 +1,33 @@
+.card{
+    margin: 0 auto;
+    width: 100%;
+    opacity: .9;
+}
+.jumbotron{
+    margin: 0 auto;
+    width: 97%;
+    background-image:linear-gradient(black,lightblue, gray);
+    color:black;
+    text-align: center;
+    opacity: 0.8;
+    font-family: 'Fascinate', cursive;
+    border-style: double;
+    border-width: 2px;
+    border-color: black;
+}
+.card-header{
+    background-image:linear-gradient(black,lightblue , gray);
+    color: black;
+    font-family: 'Anton', sans-serif;
+    border-style: double;
+    border-width: 2px;
+    border-color: black;
+}
+.btn{
+    background-image:linear-gradient(black,lightblue, gray);
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+body{
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/5/53/Maroon_Bells_%2811553%29a.jpg");
+}
